@@ -3,8 +3,30 @@
 #include "Mage.h"
 #include "Paladin.h"
 
-
 const size_t LIMITS_OF_MAP = 6;
+
+void printWin() {
+	system("CLS");
+	system("color 0b");
+	std::cout << "                         YOU HAVE REACHED THE END OF THE MAP " << std::endl;
+	std::cout << " ________________________________________________________________________________" << std::endl;
+	std::cout << "|                                                                                |" << std::endl;
+	std::cout << "|                                                                                |" << std::endl;
+	std::cout << "|                                                                                |" << std::endl;
+	std::cout << "|                     !!!!!!!!!!   YOU WIN   !!!!!!!!!                           |" << std::endl;
+	std::cout << "|                                                                                |" << std::endl;
+	std::cout << "|________________________________________________________________________________|" << std::endl;
+
+	std::cout << "                                   \\     /      " << std::endl;
+	std::cout << "                                    \\   /       " << std::endl;
+	std::cout << "                                      O       " << std::endl;
+	std::cout << "                                     ( )        " << std::endl;
+	std::cout << "                                      |         " << std::endl;
+	std::cout << "                                     / \\       " << std::endl;
+	std::cout << "                                    /   \\      " << std::endl;
+}
+
+
 int main() {
 	system("color 0a");
 	size_t op;
@@ -84,24 +106,7 @@ int main() {
 			if (j < LIMITS_OF_MAP - 1) {
 				j++;
 				if (j == LIMITS_OF_MAP - 1 && i == LIMITS_OF_MAP - 1){
-					system("CLS");
-					system("color 0b");
-					std::cout << "                         YOU HAVE REACHED THE END OF THE MAP " << std::endl;
-					std::cout << " ________________________________________________________________________________" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                     !!!!!!!!!!   YOU WIN   !!!!!!!!!                           |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|________________________________________________________________________________|" << std::endl;
-
-					std::cout << "                                   \\     /      " << std::endl;
-					std::cout << "                                    \\   /       " << std::endl;
-					std::cout << "                                      O       " << std::endl;
-					std::cout << "                                     ( )        " << std::endl;
-					std::cout << "                                      |         " << std::endl;
-					std::cout << "                                     / \\       " << std::endl;
-					std::cout << "                                    /   \\      " << std::endl;
+					printWin();
 					break;
 				}
 			}
@@ -114,24 +119,7 @@ int main() {
 			if (i < LIMITS_OF_MAP - 1) {
 				i++;
 				if (j == LIMITS_OF_MAP - 1 && i == LIMITS_OF_MAP - 1) {
-					system("CLS");
-					system("color 0b");
-					std::cout << "                         YOU HAVE REACHED THE END  OF THE MAP " << std::endl;
-					std::cout << " ________________________________________________________________________________" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|                     !!!!!!!!!!   YOU WIN   !!!!!!!!!                           |" << std::endl;
-					std::cout << "|                                                                                |" << std::endl;
-					std::cout << "|________________________________________________________________________________|" << std::endl;
-					
-					std::cout << "                                   \\     /      " << std::endl;
-					std::cout << "                                    \\   /       " << std::endl;
-					std::cout << "                                      O       " << std::endl;
-					std::cout << "                                     ( )        " << std::endl;
-					std::cout << "                                      |         " << std::endl;
-					std::cout << "                                     / \\       " << std::endl;
-					std::cout << "                                    /   \\      " << std::endl;
+					printWin();
 					break;
 				}
 			}
